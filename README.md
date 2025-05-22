@@ -1,6 +1,6 @@
 # Email Agent
 
-Simple Python tool to monitor your Gmail inbox and provide periodic email summaries.
+Agentic Python tool to monitor your Gmail inbox and provide periodic email summaries.
 
 ## Installation
 
