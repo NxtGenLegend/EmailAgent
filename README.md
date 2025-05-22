@@ -93,12 +93,15 @@ The tool will:
 EmailAgent/
   __init__.py
   agent.py
-setup.py
-requirements.txt
-credentials.json    # You download this from Google Cloud
-token.pickle       # Auto-generated after first auth
-README.md
+.gitignore
+credentials.json    # You download this from Google
+LICENSE
 MANIFEST.in
+pyproject.toml
+README.md\
+requirements.txt
+setup.py 
+token.pickle       # Auto-generated after first auth
 ```
 
 ## Development

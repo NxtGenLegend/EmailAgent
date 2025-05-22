@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "EmailAgent"
+version = "1.0.0"
+description = "Simple Gmail inbox monitor with periodic email summaries"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Adhish Chakravorty", email = "skjetly094@gmail.com"}
+]
+keywords = ["gmail", "email", "monitor", "agent", "inbox", "listener", "summary"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "google-auth>=2.23.0",
+    "google-auth-oauthlib>=1.1.0",
+    "google-auth-httplib2>=0.1.0",
+    "google-api-python-client>=2.100.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/NxtGenLegend/EmailAgent"
+Repository = "https://github.com/NxtGenLegend/EmailAgent"
+Issues = "https://github.com/NxtGenLegend/EmailAgent/issues"
+
+[project.scripts]
+EmailAgent = "EmailAgent.agent:main"
+
+[tool.setuptools.packages.find]
+include = ["EmailAgent*"]
